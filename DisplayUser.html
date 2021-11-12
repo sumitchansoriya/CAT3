@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Christ|User Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--<div style="background-image: url('christ_bg.png');">-->
+<div class="container">
+<div class="jumbotron text-center">
+    <h1>Christ University</h1>
+  </div>
+  <ul class="nav nav-pills nav-justified">
+    <li><a href="Home.html">Add User</a></li>
+    <li><a href="UpdateUser.html">Update User</a></li>
+    <li><a href="DeleteUser.html">Delete User</a></li>
+    <li><a href="SearchUser.html">Search User</a></li>
+    <li class="active"><a href="#">Display User</a></li>
+  </ul>
+</div>
+<br>
+<form class="form-horizontal" action="display_page.php" method="post">
+  
+  <div class="form-group">
+  <label class="control-label col-sm-2" for="course">Course:</label>
+  <div class="col-sm-4">
+  <select class="form-control" id="course" name="course">
+    <option value="MCA">MCA</option>
+    <option value="MCS">MCS</option>
+    <option value="MDS">MDS</option>
+  </select>
+  </div> 
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>

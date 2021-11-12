@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Christ|User Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--<div style="background-image: url('christ_bg.png');">-->
+<div class="container">
+<div class="jumbotron text-center">
+    <h1>Christ University</h1>
+  </div>
+  <ul class="nav nav-pills nav-justified">
+    <li><a href="Home.html">Add User</a></li>
+    <li><a href="UpdateUser.html">Update User</a></li>
+    <li class="active"><a href="#">Delete User</a></li>
+    <li><a href="SearchUser.html">Search User</a></li>
+    <li><a href="DisplayUser.html">Display User</a></li>
+  </ul>
+</div>
+<br><br><br>
+<center>
+<form class="form-horizontal" action="delete_page.php"  method="post">
+  <div class="input-group col-sm-4">
+      <input type="text" class="form-control" id="userid" name="userid" size="50" placeholder="Enter id" required>
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </div>
+   </div>
+</form>
+</center>
+</body>
+</html>
